@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shmoody</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+
+</head>
+
+        <body class="text-center">
+                <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                  <header class="masthead mb-auto">
+                    <div class="inner">
+                      <h3 class="masthead-brand">Shmoody</h3>
+                      <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#" id="save">Save</a>
+                        <a class="nav-link" href="#">Contact</a>
+                      </nav>
+                    </div>
+                  </header>
+            
+                  <main role="main" class="inner cover">
+                    <h1 class="cover-heading">Shmoody</h1>
+                    <p class="lead">Match your mood</p>
+                    <p class="lead">
+                      <a href="#" class="btn btn-lg" id='feeling'>I'm feeling ...</a>
+                      <br>
+                      <br>                   
+                      <input type = 'text' class='none' id = 'shmood'> 
+                      <br>
+                      <div class = 'reset'>
+                      <button class="none" id='reset'>Reset</button>
+                      <button type="button" class="none" id='saveit' data-toggle="modal" data-target="#myModal">Save</button>
+                      </div>           
+                    </p>
+                    <section class = 'none' id = 'songs'>
+                    <div class="card" id='music' style="width: 18rem; height: 4rem">
+                      <div class="card-header" style="background-color: rgba(39, 14, 68, 0.596); color: white">
+                        Your Shmood
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="artist">Artist</li>
+                        <li class="list-group-item" id="songTitle">Song Title</li>
+                      </ul>
+                    </div>
+                    </section>
+                    <div class ="centeredModal">
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Save Shmood</h4>
+                            <button type="button" class="saveShmood" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <label for ='Name'>Name</label>
+                              <input type='text' id='firstName' placeholder = 'please enter a name'>
+                              <br>
+                              <label for='Artist'>Artist</label>
+                              <input type='text' id='saveArtist'>
+                              <br>
+                              <label for='Song Title'>Song</label>
+                              <input type='text' id='saveSong'>
+
+
+
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" id='saveAll' data-dismiss="modal" class="btn btn-default">Save</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    </div>
+                  </main>
+            
+                  <footer class="mastfoot mt-auto">
+                    <div class="inner">
+                      <p>Feeling Shmoody</p>
+                    </div>
+                  </footer>
+                </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>            
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    </body>
+</html>
